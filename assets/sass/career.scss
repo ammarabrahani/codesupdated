@@ -1,0 +1,228 @@
+@import "theme/variables";
+@import url('../optima/styles.css');
+
+header{
+    @include box-shadow(0 -5px 15px rgba(0,0,0,0.6));
+}
+.banner{
+    background: url(../images/careers-banners.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 640px;
+}
+
+p{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.work__head{
+    font-size: 24px;
+    color: #171b25;
+    font-family: 'optimabold';
+
+}
+.career__head{
+    font-size: 32px;
+    color: #171b25;
+    font-family: 'optimabold';
+    @include text-transform(uppercase);
+    margin-bottom: 0;
+    .note{
+        display: block;
+        font-size: 18px;
+        font-family: 'optimanormal';
+
+    }
+}
+.working{
+    padding: 3em 0;
+    .down__head{
+        .down_para{
+            text-align: center;
+        }
+        .db__global{
+            margin-bottom: 0.6em;
+            &::after{
+                width: 246px;
+
+            }
+        }
+    }
+    .work__dtl{
+        padding-top: 3em;
+        .all_work {
+            padding-bottom: 20px;
+            padding-right:60px ;
+        }
+    }
+    .all__vac{
+        padding-top: 6em;
+         .estimators{
+            margin-top: 2.5em;
+             .lists{
+                 margin-bottom: 0;
+                 li{
+                     display: flex;
+                     justify-content: space-between;
+                     position: relative;
+                     padding-bottom: 30px;
+                     border-bottom: $border #dbdbdb;
+                     margin-top: 25px;
+                     &::before{
+                         position: absolute;
+                         content: '';
+                         left: 0;
+                         width: 8px;
+                         height: 8px;
+                         background: $secondary-color;
+                         @include border-radius(100px);
+                         left: -26px;
+                         top: 12px;
+
+                     }
+                     &:last-child{
+                         border-bottom: none;
+                     }
+                     .dbx{
+                         span{
+                            font-family: 'optimanormal';
+                             display: block;
+                             font-size: 20px;
+                             &:first-child{
+                                color: #171b25;
+                                font-size: $fs-hd-regular;
+                             }
+                         }
+                     }
+                     .dbx_rht{
+                        font-size: 22px;
+                         i{
+                             color: $secondary-color;
+                             padding-right: 100px;  
+                             font-size: 24px;
+                             a{
+                                 color: #949494;
+                                 font-family: 'optimanormal';
+                                 margin-left: 6px;
+                                 font-size: 18px;
+
+                             }
+                         }
+                         .btn{
+                             padding: 14px 50px;
+                             border-radius: 100px;
+                             border: $border $secondary-color;
+                             color: $secondary-color;
+                             font-family: 'optimabold';
+                             font-size: 20px;
+                             @include transition(all 0.3s ease-in-out);
+                             &:hover{
+                                background: $secondary-color;
+                                color: $white-color;
+                             }
+                         }
+                     }
+                 }
+             }
+             .__note{
+                .career__head{
+                    padding-bottom: 5px;
+
+                }
+                .lists{
+                    li{
+                        .dbx_rht{
+                            .btn{
+                                background: #dadada;
+                                padding: 12px 65px;
+                                border-color: #dadada;
+                                color: #7d7d7d;
+                            }
+                        }
+                    }
+                }
+             }
+         }
+    }
+}
+footer .site_footer{
+    z-index: -9;
+}
+
+@media (max-width:1400px) {
+    .db__global {
+        font-size: 50px !important;
+    }
+    .working .down__head .db__global::after {
+        width: 176px !important;
+
+    }
+    p{
+        font-size: 14px !important;
+    }
+    .work__head{
+        font-size: 22px !important;
+    }
+    .career__head{
+        font-size: 26px !important;
+    }
+    .working .all__vac .estimators .lists li .dbx span:first-child {
+        font-size: 20px !important;
+
+    }
+    .working .all__vac .estimators .lists li .dbx span{
+        font-size: 14px !important;
+    }
+    .working .all__vac .estimators .lists li .dbx_rht .btn {
+        padding: 10px 32px;
+
+    }
+    .working .all__vac .estimators .lists li .dbx_rht .btn {
+        font-size: 16px !important;
+    }
+    .working .all__vac .estimators .__note .lists li .dbx_rht .btn{
+        padding: 10px 50px;
+        font-size: 14px !important;
+
+    }
+    .banner{
+        height: 530px ;
+    }
+}
+
+@include tablet{
+    .working .all__vac .estimators .lists li{
+        flex-direction: column;
+    }
+    .working .all__vac .estimators .lists li .dbx{
+        margin-bottom: 12px;
+    }
+    .working .all__vac .estimators .lists li .dbx_rht{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .working .all__vac .estimators .lists li .dbx_rht i{
+        padding-right: 0;
+    }
+}
+@include mobile {
+    .working .all__vac .estimators .lists li .dbx_rht{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .db__global{
+        font-size: 30px !important;
+
+    }
+    .working .all__vac .estimators .lists li .dbx_rht i{
+        margin-bottom: 12px;
+    }
+    p {
+        font-size: 12px !important;
+    }
+    .career__head {
+        font-size: 24px !important;
+
+    }
+}

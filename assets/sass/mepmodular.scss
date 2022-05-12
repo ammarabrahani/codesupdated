@@ -1,0 +1,64 @@
+@import "theme/variables";
+@import url('../optima/styles.css');
+
+    html {
+        overflow: hidden !important;
+
+    }
+    .db__global.bottom_center::after{
+        width: 140px;
+    }
+ .abouts{
+     .abts_banner{
+         background: url('../../assets/images/mep_modular2.jpg');
+         background-position: center center;
+         height: 600px;
+         .db_main{
+            .paras1{
+                margin-bottom: 0;
+            }
+        }
+     }
+ }
+ .benefits{
+     .mep_lists{
+         @extend list-type-ulli;
+         display: flex;
+         flex-wrap: wrap;
+         padding-top: 20px;
+         li{
+             width: 33%;
+             color: $base-color-dark;
+             font-family: 'optima-mediummedium';
+             font-size: 16px;
+             margin-bottom: 10px;
+
+         }
+     }
+     .mep_lists2{
+        @extend list-type-ulli;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: 33%;
+            color: $base-color-dark;
+            font-family: 'optima-mediummedium';
+            font-size: 16px;
+            margin-bottom: 10px;
+
+        }
+     }
+     .mep_lists3{
+        @extend list-type-ulli;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: 100%;
+            color: $base-color-dark;
+            font-family: 'optima-mediummedium';
+            font-size: 16px;
+            margin-bottom: 10px;
+
+        }
+     }
+ }

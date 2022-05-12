@@ -1,0 +1,63 @@
+@import "theme/variables";
+@import url('../optima/styles.css');
+
+    html {
+        overflow: hidden !important;
+
+    }
+    .db__global.bottom_center::after{
+        width: 140px;
+    }
+ .abouts{
+     .abts_banner{
+         background: url('../../assets/images/sustainability_banner.jpg');
+         background-position: center center;
+         height: 600px;
+         .db_main{
+            .paras1{
+                margin-bottom: 0;
+            }
+        }
+     }
+ }
+ .choose_codes{
+     background: none;
+     padding-top: 0;
+     .db_choose_area{
+         padding-bottom: 0;
+     }
+ }
+ .abtcodes_constructions {
+     padding-top: 40px;
+        .choose_codes{
+            p{
+                text-align: left;
+                margin-bottom: 5px;
+            }
+         }
+     .abts__areas{
+        padding: 25px 0;
+        .values_text{   
+            padding-bottom: 15px;
+        }
+     }
+     .environment{
+         .edgh__heads{
+             font-size: $fs-hd-regular + 12px;
+             margin-bottom: 15px;
+         }
+     }
+ }
+
+
+
+#headingAnimition10{
+    .clr{
+        color: $white-color !important;
+    }
+}
+
+
+footer .site_footer{
+    z-index: -99;
+}

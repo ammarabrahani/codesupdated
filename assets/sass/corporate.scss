@@ -1,0 +1,178 @@
+@import "theme/variables";
+@import url('../optima/styles.css');
+
+header{
+    @include box-shadow(0 -5px 15px rgba(0,0,0,0.6));
+}
+.banner{
+    background: url(../images/corporate-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 680px;
+    .paras1{
+              
+    font-size: 18px;
+    width: 50%;
+    color:$base-color-dark;
+    }
+    .db_main{
+        width: calc(100% - 95px);
+        margin-left: auto;
+    }
+}
+.db_gbl{
+    color: #171b25;
+    
+}
+.db_bottom{
+    &::before{
+        width: calc(100% - 60px);
+    }
+}
+.corporate_main{
+    padding: 3em 0;
+    .down__head{
+        .down_para{
+            font-size: $fs-regular + 4px;
+            text-align: center;
+            margin-top: 30px;
+            padding: 0 120px;
+            margin-right: 15px;
+
+        }
+    }
+
+ 
+    .crp_dts{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4em;
+        .__box__01{
+            @include box-shadow(0 10px 15px 0 rgba(0,0,0,0.15));
+            margin-bottom: 20px;
+            text-align: center;
+            background: #f8f8f8;
+            padding: 2em 0;
+            margin-bottom: 50px;
+            @include border-radius(20px);
+            margin: 0 12px 45px 12px;
+            .down_loads{
+                padding-bottom: 10px;
+
+            
+                .kb{
+                    display: block;
+                    color: #171b25;
+                    font-size: 20px;
+                    font-family: 'optima-mediummedium';
+                    margin-top: 10px;
+
+                }
+                a{
+                    color: #eab551;
+                    font-family: 'optima-mediummedium';
+                    font-size: $fs-hd-regular;
+                }
+            }
+            .bx__head{
+              
+                font-size: 35px;
+                color: #171b25;
+                font-family: 'optima-mediummedium';
+            }
+        }
+    }
+    .carousel-control-prev ,.carousel-control-next{
+        display: none;
+    }
+    .carousel-indicators{
+        bottom: initial;
+        button{
+            height: 12px;
+            width: 12px;
+            @include border-radius(100px);
+            background: #cacaca;
+            border-top: initial;
+            border-bottom: initial;
+            &.active{
+                background: $secondary-color;
+
+            }
+        }
+    }
+}
+
+
+
+footer{
+    .site_footer{
+        z-index: -999;
+    }
+}
+
+@media (max-width:1500px){
+    .corporate_main {
+        .crp_dts{
+            width: 100%;
+        }
+    }
+}
+@include desktopwide{
+    .banner{
+        height: 550px;
+   
+    }   
+    p{
+        font-size: $fs-regular !important;
+    }
+    .corporate_main {
+        .crp_dts{
+            width: 100%;
+            .__box__01 {
+                .down_loads{
+                    img{
+                        width: 60px;
+                    }
+                }
+                .bx__head{
+                    font-size: $fs-hd-regular - 2px;
+                }
+            }
+        }
+    }
+}
+
+@include desktop{
+    .corporate_main {
+                .down__head {
+                    .down_para{
+                        padding: 0;
+                    }
+            }
+    }
+}
+@include tabletwide{
+    .db_gbl{
+        line-height: 1;
+
+    }
+    .banner {
+
+        .db_main{
+            width: 100%;
+        }
+        .paras1{
+            font-size: $fs-regular - 2px;
+        }
+    }
+}
+@include mobilewide {
+    .banner .paras1{
+        width: 100%;
+    }
+}
+@include mobile{
+    p{
+        font-size: 12px !important;
+    }
+}

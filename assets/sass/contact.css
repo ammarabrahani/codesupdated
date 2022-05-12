@@ -1,0 +1,316 @@
+@import url("../optima/styles.css");
+display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
+
+/* @extend list-type-ulli; */
+list-type-ulli {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden !important;
+}
+
+.contact_us {
+  background: #11151b;
+  padding-bottom: 4em;
+}
+
+.contact_us .cont_dtl {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.contact_us .cont_dtl img {
+  width: 35px;
+}
+
+.contact_us .cont_dtl span:last-child {
+  color: #fff;
+}
+
+.contact_us .cont_dtl .head {
+  line-height: 1.2;
+  padding: 3em 0;
+}
+
+.contact_us .cont_dtl .head span:first-child {
+  color: #f1a10a;
+  font-size: 55px;
+}
+
+.contact_us .cont_dtl .head span:last-child {
+  color: #fff;
+  font-size: 70px;
+  font-family: 'optimabold';
+  display: block;
+}
+
+.contact_us .cont_dtl .btn {
+  font-size: 22px;
+  -webkit-text-transform: uppercase;
+  -moz-text-transform: uppercase;
+  -ms-text-transform: uppercase;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.contact_us .cont_dtl .btn::before {
+  position: absolute;
+  content: '';
+  border-top-color: goldenrod;
+  border-right-color: goldenrod;
+  border-bottom-color: goldenrod;
+  -webkit-transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s !important;
+  transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s !important;
+}
+
+.contact_us .mps {
+  width: 90%;
+  margin-left: auto;
+}
+
+.contact_us .mps .map {
+  width: 100%;
+  background-size: cover;
+}
+
+footer .site_footer {
+  z-index: -99;
+}
+
+.button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  line-height: 1.1;
+}
+
+svg {
+  border-radius: 25px;
+  z-index: 1;
+}
+
+path {
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 460;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button .req {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  top: 19px;
+  text-transform: uppercase;
+  font-family: 'optimanormal';
+  font-size: 16px;
+}
+
+.button:hover svg path, .maps:hover svg path {
+  animation: dash 2s reverse cubic-bezier(0.95, 0.03, 0.51, 1.95);
+  -webkit-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95);
+  -moz-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  stroke: white;
+  cursor: pointer;
+}
+
+@-webkit-keyframes dash {
+  to {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600 0;
+  }
+}
+
+.routes {
+  padding-top: 8em;
+}
+
+.routes .area {
+  padding-top: 6em;
+}
+
+.routes .area .daily {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.routes .area .daily span:last-child {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  -webkit-text-transform: uppercase;
+  -moz-text-transform: uppercase;
+  -ms-text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.routes .area .email {
+  color: #fff;
+  font-size: 20px;
+  -webkit-text-transform: uppercase;
+  -moz-text-transform: uppercase;
+  -ms-text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.routes .area .downloads {
+  position: initial;
+  padding: 0;
+  padding-top: 4em;
+}
+
+.routes .area .downloads .db_pdf_link span i {
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+}
+
+.routes .area .downloads .db_pdf_link a {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.routes .area .downloads .db_pdf_link span {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #f1a10a;
+}
+
+.routes .area .downs {
+  padding-left: 10px;
+  line-height: 1.4;
+}
+
+.routes .maps {
+  position: relative;
+}
+
+.routes .maps .rt {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 16px;
+  top: -2px;
+  color: white;
+}
+
+.routes .maps .rt:hover {
+  color: white;
+}
+
+.routes .rt_para {
+  color: white;
+  font-size: 18px;
+  line-height: 1.7;
+  font-size: 24px;
+}
+
+.routes .rt_para span {
+  display: block;
+}
+
+.dbs {
+  color: #f1a10a;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1400px) {
+  .routes .rt_para {
+    font-size: 20px;
+  }
+  .routes .area .daily span:last-child, .routes .area .email, .routes .area .downloads .db_pdf_link span, .routes .area .downloads .db_pdf_link a {
+    font-size: 16px;
+  }
+  .routes .area .downloads .db_pdf_link span i {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+  .dbs {
+    font-size: 16px;
+  }
+  .contact_us .cont_dtl .head span:last-child {
+    font-size: 50px;
+  }
+  .contact_us .cont_dtl .head span:first-child {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .routes .rt_para {
+    font-size: 14px;
+  }
+  .routes .area .daily span:last-child, .routes .area .email, .routes .area .downloads .db_pdf_link span, .routes .area .downloads .db_pdf_link a {
+    font-size: 14px;
+  }
+  .routes .area .downloads .db_pdf_link span i {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .dbs {
+    font-size: 14px;
+  }
+  .contact_us .cont_dtl .head span:last-child {
+    font-size: 30px;
+  }
+  .contact_us .cont_dtl .head span:first-child {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .reuest2 .head_area {
+    font-size: 45px !important;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"
+  class="has-hover js js-focus-visible is-not-ie-edge will-have-scroll-smooth has-scroll-init has-scroll-smooth"
+ data-js-focus-visible="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codes Construction </title>
+
+    <link rel="stylesheet" href="assets/cssn/bootstrap.css">
+    <link rel="stylesheet" href="assets/cssn/main.css">
+    <link rel="stylesheet" href="assets/cssn/flexslider/flexslider.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/New folder/drawer.css">
+    <link rel="stylesheet" href="assets/css/aminamtes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/daterangepicker.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+
+
+</head>
+
+<body id="scroll-container">
+  <!-- <div  class="viewport" id="viewport"> -->
+  <input type="checkbox" id="menu-control" class="menu-control" onchange="sidebar('menu-control')">
+  <aside class="sidebar side1" id="side1">
+    <div class="overlaySidebar" id="overlaySidebar">
+    </div>
+    <div class="curveDiv" id="curveDiv">
+      <div class="area">
+        <div class="top_br">
+          <a class="home" href="index.html">HomePage</a>
+          <label for="menu-control" class="sidebar__close hidePc"> <i class="fal fa-times"></i>
+          </label>
+          <!-- <label for="menu-control" > -->
+          <!-- <div class="menu" id="menu">
+            <span>Menu
+              <i class="fal fa-chevron-right"></i>
+            </span>
+          </div> -->
+          <!-- </label> -->
+        </div>
+        <nav class="navbar sidebar__menu" id="toggle">
+          <div class="container-fluid">
+
+            <ul class="navbar-nav ms-auto sidebar_menu1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><label for="menu-control"
+                    class="sidebar__close linkClose">Home</label></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sustainability.html">Sustainability</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careers.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+           
+
+            </ul>
+
+          </div>
+        </nav>
+
+        <div class="downloads">
+          <div class="db_pdf_link">
+            <div>
+              <a href="">Download the Company Profile</a>
+              <span class="mb"> PDF.8 MB</span>
+            </div>
+            <div>
+              <span><i class="fal fa-arrow-to-bottom"></i></span>
+            </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+      <div class="sidebar__closeBtn spin circleButton" id="sidebar__close">
+        <span>
+          <label for="menu-control" class="sidebar__close">
+            <i class="fal fa-times"></i>
+          </label>
+        </span>
+      </div>
+
+    </div>
+
+
+  </aside>
+  <div class="scroller">
+    <div class="loader" id="loader">
+      <img src="assets/images/Animation.svg" alt="">
+    </div>
+    <header>
+     
+      <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light pse" id="navbar">
+          <div class="container-fluid">
+            <a class="brands" href="#">
+              <img src="assets/images/Logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                        <i class="fal fa-chevron-down"></i>                    
+
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <div class="sub__links">
+                        
+                          <div class="details">
+                            <a class="" href="about-us.html">About Us
+                              <i class="fal fa-chevron-right"></i>                    
+                            </a>
+                          <ul class="inner___pages_links">
+                            <!-- <li><a class="dropdown-item" href="#"></a></li> -->
+                            <li><a class="dropdown-item" href="construction-operations.html">Construction Operations 
+                            </a></li>
+                            <li><a class="dropdown-item" href="project-management.html  ">Projects Management 
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">MEP Works
+                            </a></li>
+                         
+                         
+                          </ul>
+                          <ul class="inner___pages_links">
+                            <li><a class="dropdown-item" href="#">Pre-Engineering Capabilities 
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">BIM Design Capabilities 
+                            </a></li>
+                            <li><a class="dropdown-item" href="mep-modular.html">MEP Modular Systems
+                            </a></li>
+                          </ul>
+                          <ul class="inner___pages_links">
+                            <li><a class="dropdown-item" href="#">Property Services 
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">Building Maintenance 
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">Fit-Out & Refurbishment
+                            </a></li>
+                          </ul>
+                          </div>
+                        </div>
+                        
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="sustainability.html">Sustainability</a>
+                </li>
+            
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="project.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="careers.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="toggle_btn">
+      <section class="banner drawerSide">
+        <label for="menu-control" class="hamburger">
+          <i class="hamburger__icon icon1"></i>
+          <i class="hamburger__icon icon2"></i>
+          <i class="hamburger__icon icon3"></i>
+        </label>
+
+      </section>
+  
+    </div>
+    <div class="swiper mySwiper bottom_Sweeps">
+      <div class="bar">
+        <div class="inerBar">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination swiper-pagination-h">
+
+          </div>
+
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider1" id="slider1">
+          <div class="px_50">
+            <div class="db_main " id="db_main">
+              <div class="headingDiv">
+
+                <h3 class=" db_gbl">
+                  <span id="headingAnimition10" class="animatedHeading mainSliderHead"> MEP & Fit Out 
+
+                  </span> <br>
+                  <span id="headingAnimition11" class="animatedHeading mainSliderHead top_main_strip"> partners in  <span class="top_main_strip">construction</span> </span>
+                </h3>
+              </div>
+              <p class="animate__animated animate__fadeInUp animate__delay-4s paras1">Delivering environments that our clients can excel in. The drive for excellence
+                and innovation is part of our DNA, maintaining Codes Construction LLC as the
+                design and build contractor of choice in the built environment.</p>
+
+              <a class="more_bottom animate__animated animate__fadeInUp animate__delay-4s" href="#javascript:;">Read
+                more
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-slide slider2">
+          <div class="px_50">
+            <div class="db_main " id="db_main">
+              <div class="headingDiv">
+
+                <h3 class=" db_gbl">
+                  <span  class=" mainSliderHead"> Creating <span class="top_main_strip2">Tomorrow</span>, 
+ 
+
+                  </span> <br>
+                  <span  class=" mainSliderHead">Together.</span>
+                </h3>
+              </div>
+              <p class="animate__animated animate__fadeInUp animate__delay-4s paras1">Our distinctive culture celebrates people, partnership and sustainability.
+                We are always exploring new value engineered ways for the Construction
+                industry to work together on strategic issues of reducing Construction and
+                lifecycle cost.
+
+                .</p>
+
+              <a class="more_bottom animate__animated animate__fadeInUp animate__delay-4s" href="#javascript:;">Read
+                more
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider3">
+          <div class="px_50">
+            <div class="db_main " id="db_main">
+              <div class="headingDiv">
+
+                <h3 class=" db_gbl">
+                  <span class=" mainSliderHead"> Above all, 
+ 
+
+                  </span> <br>
+                  <span  class=" mainSliderHead"> it’s about <span class="top_main_strip2">people.</span> </span>
+                </h3>
+              </div>
+              <p class="animate__animated animate__fadeInUp animate__delay-4s paras1">We are a Responsible safe working contractor  with a Focused commitment
+                to building a strong company. A Trusted brand, backed by a history since
+                2006, providing Smart, innovative, and inspiring solutions, Passionate
+                about every project we deliver.
+
+                .</p>
+
+              <a class="more_bottom animate__animated animate__fadeInUp animate__delay-4s" href="#javascript:;">Read
+                more
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination swiper-pagination-h vvv">
+
+      </div>
+    </div>
+    <div class="px_50">
+      <div class="lwer_ar" id="lwer_ar">
+        <div class="_cll_bck">
+          <div class="smm">
+            <img src="assets/images/White_Line.svg" alt="">
+          </div>
+          <i class="fal fa-phone-alt"></i>
+          <span>Request A <br> Callback </span>
+        </div>
+        <div class="dots">
+          <img src="assets/images/Black_Dots.svg" alt="">
+        </div>
+        <div class="bx same">
+          <img src="assets/images/box01.png" alt="">
+        </div>
+        <div class="bx02 same">
+          <img src="assets/images/box01.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="mainDivSec">
+      <section class="sustain" id="sustain">
+        <div class="bg__clr">
+          <div class="px_50">
+            <div class="downs">
+           <div class="db_pdf_link">
+            <div class="data_scales">
+              <a href="">Download the Company Profile</a>
+              <span class="mb"> PDF.8 MB</span>
+            </div>
+            <div class="data_scales">
+              <img src="assets/images/btn_download.svg" alt="">
+            </div>
+         
+          </div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="efx" id="efx">
+        
+          <!-- <div class="sustain_lft_line same">
+            <img src="assets/images/02-lines.png" alt="">
+          </div> -->
+        </div>
+        <div class="px_50">
+          <div class="op_gbl headingDiv">
+            <h3 class="head_area"> 
+              <span id="headingAnimition_reshaping" class="animatedHeading yellow_txt">
+                Reshaping tomorrow
+              </span>
+              <span id="headingAnimition1" class="animatedHeading black__head">
+                is our framework for a 
+              </span>
+              <span id="sustain_future" class="animatedHeading yellow_txt">
+                sustainable future 
+              </span>
+            </h3>
+
+          </div>
+          <div class="counters" id="counters">
+            <div class="pl same">
+              <img src="assets/images/planes.png" alt="">
+            </div>
+            <div class="gxt same">
+              <img src="assets/images/grstrip.png" alt="">
+            </div>
+            <div class="main_area">
+              <!-- <div class="v_line same">
+                <img src="assets/images/vertical-line.png" alt="">
+              </div>
+              <div class="wind same">
+                <img src="assets/images/wind.png" alt="">
+              </div> -->
+            
+              <div class="dt same">
+                <img src="assets/images/dots1.png" alt="">
+              </div>
+            
+              <div class=" count_area">
+                <div class="counter__div">
+                  <div class="countings">
+                    <img src="assets/images/Numbers_icons-03.svg" alt="">
+                    <span class="numbers"><span id="nbr" class="counterNumber">16</span>+</span>
+                    <p>Years of Experience
+                    </p>
+    
+                  </div>
+                  <div class="countings">
+                    <img src="assets/images/Numbers_icons-02.svg" alt="">
+                    <span class="numbers"><span id="nbr2" class="counterNumber">2000</span>+</span>
+                    <p>Satisfied Customers
+                    </p>
+    
+                  </div>
+                  <div class="countings">
+                    <img src="assets/images/Numbers_icons-01.svg" alt="">
+                    <span class="numbers"><span id="nbr3" class="counterNumber">300
+                    </span>+</span>
+                    <p>Finished Projects</p>
+    
+                  </div>
+    
+                </div>
+                <div class="inner_div">
+                  <div class="circles2 same">
+                    <img src="assets/images/grstrip.png" alt="">
+                  </div>
+                  <div class="gfd">
+                    <div class="dots2 same">
+                      <img src="assets/images/Black_Dots.svg" alt="">
+                    </div>
+                    <div class="vdv " id="sliderImage">
+  
+                      <div class="vd__area">
+                        <div class="buttonPlayDiv">
+          
+                          <div class="buttonVideoPlay">
+                            <div class="lds-ring">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="playIconDiv">
+                              <i class="fas fa-play"></i>
+                            </div>
+          
+                          </div>
+                        </div>
+                        <img src="assets/images/dbv.jpeg" alt="">
+          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+              </div>
+       
+              
+            </div>
+          </div>
+
+        </div>
+        <div class="bn_rht">
+           <div class="banners_rght">
+          
+        </div>
+        </div>
+        <div class="codes_banner">
+          <div class="codes px_50">
+            <div class="circle3 same">
+              <img src="assets/images/circle2.png" alt="">
+            </div>
+            <div class="row areas">
+              <div class="cd__line same">
+                <img src="assets/images/yl_line.png" alt="">
+              </div>
+              <div class="col-lg-4 tfs">
+  
+                <h2 class="abt">About
+                  <span class="cons">us</span>
+  
+                </h2>
+                <p>Codes Construction LLC, established in
+                  2006, is one of the prominent Emirati
+                  privatelyowned Construction businesses
+                  in the UAE. We employ approximately
+                  1,500 people and work with a wide range
+                  of public and private sector customers &
+                  partners.</p>
+              </div>
+              <div class="col-lg-4 efs">
+                <p>Everything we do is guided by our purpose
+                  of working together to inspire better ways
+                  of creating the places, communities, and
+                  businesses of tomorrow. We are
+                  committed to the long-term sustainability
+                  of the built environment.
+                  Our values, long term vision and financial
+                  independence enabled us to thrive
+                  throughout the economic ups and downs.</p>
+                <p>
+                  Our values, long term vision and financial 
+                  independence enabled us to thrive 
+                  throughout the economic ups and downs.
+                </p>
+              </div>
+              <div class="col-lg-4 xfs">
+                <p>Our distinctive culture celebrates people, 
+                  partnership and sustainability. We are 
+                  always exploring new value engineered 
+                  ways for the Construction industry to 
+                  work together on strategic issues of 
+                  reducing Construction and lifecycle cost.
+  
+                </p>
+                <a class="more_bottom" href="#javascript:;">See more
+                  <i class="fal fa-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+       
+          
+          
+          </div>
+          <div class="fan">
+            <img src="assets/images/fan.png" alt="">
+          </div>
+        </div>
+
+        <div class="mainDivSec">
+          <div class="choose_codes">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 headingDiv">
+                  <h3 class="db__global bottom_center">
+                    <!-- <span id="headingAnimition4" class="animatedHeading">  </span> -->
+                    <span id="headingAnimition4" class="animatedHeading">Our Values</span>
+                    <!-- Why Choose Codes Construction -->
+                  </h3>
+                  <p class="values_text">
+                    We all want Codes Construction to be the very best. Being the best means upholding the great reputation we built over the years.
+
+                  </p>
+                  <p class="values_text">
+                    Our 5 values have been with us throughout our development as an organisation and make a difference to the way we think, act and do
+                    business with our customers and suppliers.
+                  </p>
+                </div>
+              </div>
+              <div class="row db_choose_area">
+                <div class="col-lg-4  efxx">
+                  <div class="choosings">
+                    <img src="assets/images/Icons-04.svg" alt="">
+                    <span class="chos_head">PERFORMANCE
+                    </span>
+                    <p class="ch_dtl">Delivering value for our customers, partners 
+                      and shareholders is the focus of our work.
+                      We work hard to generate excellent results.
+
+                    </p>
+    
+                  </div>
+                </div>
+                <div class="col-lg-4  efxx">
+                  <div class="choosings">
+                    <img src="assets/images/Icons-02.svg" alt="">
+                    <span class="chos_head">Teamwork:
+                    </span>
+                    <p class="ch_dtl">
+                      We are committed to realising our vision through 
+                      teamwork. Our people and our processes work 
+                      together in a connected and seamless way.
+         
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4  efxx">
+                  <div class="choosings">
+                    <img src="assets/images/Icons-01.svg" alt="">
+                    <span class="chos_head">INTELLIGENCE:
+                    </span>
+                    <p class="ch_dtl">We take an intelligent approach to
+                      verything we do. We pool our skills and energies
+                     in pursuit of the best solutions.</p>
+    
+                  </div>
+                </div>
+                <div class="col-lg-4  efxx">
+                  <div class="choosings">
+                    <img src="assets/images/Icons-03.svg" alt="">
+                    <span class="chos_head">INTEGRITY</span>
+                    <p class="ch_dtl">Our relationships are built on trust. Those who
+                      work for us, and with us, have a right to be treated
+                      fairly. We will not compromise on maintaining the
+                      highest safety standards. Our reputation matters to
+                      us. We are here for the long term.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4  efxx">
+                  <div class="choosings">
+                    <img src="assets/images/Icons-06.svg" alt="">
+                    <span class="chos_head">RESPECT FOR PEOPLE & COMMUNITIES
+                    </span>
+                    <p class="ch_dtl">
+                      We strive for an inclusive culture based on mutual
+                      respect. We respect each other, our suppliers, our
+                      customers, our partners, our communities and
+                      society at large.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
+        <div class="our_projects">
+          <div class="slogo">
+            <img src="assets/images/sustain.svg" alt="">
+          </div>
+          <!-- first  -->
+          <div class="row all_db px_50" style="position: relative;">
+            <h1 class="vr_txt">
+              E <br> G <br> N <br> E <br> I <br>
+            </h1>
+            <div class="zero same">
+              <img src="assets/images/01-lines.png" alt="">
+            </div>
+            <div class="bx same">
+              <img src="assets/images/box01.png" alt="">
+            </div>
+            <div id="leftAnim2" class="col-lg-6 col-md-6 pr_02 fromLeftAnimation">
+
+              <div class="grdots">
+                <img src="assets/images/dots1.png" alt="">
+              </div>
+              <div class="two same">
+                <img src="assets/images/02-lines.png" alt="">
+              </div>
+              <div class="_pic_box">
+                <img class="lft_img" src="assets/images/pre_eng.jpg" alt="">
+                <div id="no2" class="no">
+                  <span>02</span>
+                </div>
+              </div>
+              <!-- <img src="assets/images/project15a.jpg" alt=""> -->
+              
+              <div id="leftAnim3" class="egh_head">
+                <div class="reshapes_line same">
+                  <img src="assets/images/refresh.png" alt="">
+                </div>
+                <h3 class="edgh__heads">PRE-ENGINEERING 
+ 
+                  <span class="edh_sm">CAPABILITIES</span>  
+                </h3>
+
+                <p>Codes Construction delivers for a wide range of customers by
+                  creating environments that our clients can excel in. The drive
+                  for excellence and innovation is part of our DNA, maintaining
+                  Codes Construction as the design and build contractor of
+                  choice in the built environment.</p>
+                <a class="more_bottom" href="#javascript:;">See more
+                  <i class="fal fa-long-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 pr_03 fromLeftAnimation">
+           
+              <div class="all_db_dtl">
+                <div id="no" class="no">
+                  <span>01</span>
+                </div>
+                <div id="divNumber1" class="egh_head leftAnimation">
+                  <h3 class="edgh__heads"> MEP WORKS 
+                    <span>  (Mechanical, Electrical & Plumbing)</span>
+
+                  </h3>
+                  <p>Our qualified engineers and skilled technicians are
+                    experts in most of the known MEP systems available
+                    in the market. We execute following MEP systems’
+                    pre-engineering, supply, installation, commissioning
+                    and maintenance works:
+                    </p>
+                  <a class="more_bottom" href="#javascript:;">See more
+                    <i class="fal fa-long-arrow-right"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="rgt">
+                <img class="rfx_img" src="assets/images/mep_works.jpg" alt="">
+                <div class="two same">
+                  <img src="assets/images/02-lines.png" alt="">
+                </div>
+              </div>
+            </div>
+            <h1 class="lxdf">
+              N <br> I <br> E <br> R <br> N 
+            </h1>
+       
+         
+          </div>
+
+          <!-- second -->
+          <div class="row all_db all_pad px_50" style="position: relative;">
+            <!-- <h1 class="vr_txt">
+              C <br> M <br> N
+            </h1> -->
+            <div id="leftAnim2" class="col-lg-6 col-md-6 pr_02 fromLeftAnimation">
+
+              <div class="grdots">
+                <img src="assets/images/dots1.png" alt="">
+              </div>
+              <div class="two same">
+                <img src="assets/images/02-lines.png" alt="">
+              </div>
+              <div class="_pic_box">
+                <img class="lft_img" src="assets/images/mep_modular.jpg" alt="">
+                <div id="no2" class="no">
+                  <span>04</span>
+                </div>
+              </div>
+              <!-- <img src="assets/images/project15a.jpg" alt=""> -->
+              
+              <div id="leftAnim3" class="egh_head">
+                <div class="reshapes_line same">
+                  <img src="assets/images/refresh.png" alt="">
+                </div>
+                <h3 class="edgh__heads">MEP MODULAR 
+                  <span class="edh_sm">SYSTEMS</span>  
+                </h3>
+
+                <p>We realise the benefits of off-site Construction of engineering
+                  services & integrated build solutions across a wide range of
+                  industry sectors. Offering clients, a modern, collaborative,
+                  innovative & forward-thinking solution that presents an accurate
+                  & affordable option to labour intensive, time consuming onsite
+                  production & assembly
+                  .</p>
+                <a class="more_bottom" href="#javascript:;">See more
+                  <i class="fal fa-long-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 pr_03 fromLeftAnimation">
+              <!-- <div class="zero same">
+                <img src="assets/images/01-lines.png" alt="">
+              </div> -->
+              <div class="all_db_dtl">
+                <div id="no" class="no">
+                  <span>03</span>
+
+                </div>
+                <div id="divNumber1" class="egh_head leftAnimation">
+                  <h3 class="edgh__heads">BIM DESIGN 
+                    <span class="edh_sm">CAPABILITIES</span>
+
+                  </h3>
+                  <p>Bespoke services to meet your needs - We deliver bespoke
+                    mechanical and electrical services, providing whole life
+                    solutions based upon a client’s requirements & aspirations.
+                    Our early engagement on projects consistently leads to a
+                    reduction in project costs and programme delivery.
+                    </p>
+                  <a class="more_bottom" href="#javascript:;">See more
+                    <i class="fal fa-long-arrow-right"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="rgt">
+                <img class="rfx_img" src="assets/images/bim_design.jpg" alt="">
+                <div class="__grdots same">
+                  <img class="dots_img" src="assets/images/dots1.png" alt="">
+                </div>
+                <div class="two same">
+                  <img src="assets/images/02-lines.png" alt="">
+                </div>
+                <div class="_01_lines">
+                  <img src="assets/images/01-lines.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- <h1 class="lxdf">
+              O <br> I <br> G
+            </h1> -->
+            <h1 class="lxdf letter_g">
+              G
+           </h1>
+            <div class="vtl same">
+              <img src="assets/images/vertical-line.png" alt="">
+            </div>
+          
+          </div>
+        </div>
+
+
+      </section>
+    </div>
+    
+    <div class="mainDivSec">
+    
+      <section class="plane">
+        <div class="pl same">
+          <img src="assets/images/planes.png" alt="">
+        </div>
+        <div class="container">
+          <div class="circle same">
+            <img src="assets/images/circle2.png" alt="">
+          </div>
+          <div class="__lines same">
+            <img src="assets/images/01-lines.png" alt="">
+          </div>
+        
+        </div>
+      </section>
+    </div>
+ 
+
+    <div class="mainDivSec">
+      <section class="innovative">
+        <div class="px_50">
+
+          <!-- ../images/projects/project1a.png -->
+          <div class="cc imageDiv headingDiv">
+            <h3 class="db__global bottom_center ">
+              <!-- <span id="headingAnimition3" class="animatedHeading"></span> -->
+              <span id="headingAnimition3" class="animatedHeading">Innovative . Imagine . Inspire</span>
+              <!-- Innoative . Imagine . Inspire -->
+            </h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="rt same">
+
+      <div class="right__lines">
+        <img src="assets/images/sm-lines.png" alt="">
+      </div>
+    </div>
+  
+    <div class="mainDivSec">
+      <section class="plane">
+        <div class="container">
+          <div class="circle same">
+            <img src="assets/images/circle2.png" alt="">
+          </div>
+          <div class="__lines same">
+            <img src="assets/images/01-lines.png" alt="">
+          </div>
+         
+        </div>
+      </section>
+    </div>
+    <div class="mainDivSec" id="third">
+      <section class="sm_logo">
+        <div class="container">
+          <div class="scrl">
+            <img src="assets/images/small-logo.png" alt="">
+
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="mainDivSec">
+
+      <section class="projects">
+        <div class="banner_left"></div>
+        <div class="banner_rft"></div>
+        <div class="px_50">
+          <div class="row">
+            <div class="col-md-12 headingDiv">
+              <h3 class="db__global bottom_center flexCol">
+                <span id="headingAnimition5" class="animatedHeading"> Property Services </span> 
+                
+                <span class="buildings animatedHeading" id="build">(Building Maintenance & Fit Out) </span>
+                <!-- Sharing Knowledge to Deliver 
+            <span> Innoation Excellence </span> -->
+              </h3>
+              <p class="projects_para">Our FM and Fit Out divisions provide a range of property services to our portfolio of clients which span sectors including retail, education, <br>
+                sport and leisure, and the public sector.</p>
+              <p class="projects_para">We specialise in providing high quality fit-out, refurbishment and building maintenance solutions and act as a trusted partner for our <br>
+                customers, developing smart solutions that are tailored to their needs and optimise the performance of their premises. This allows them to <br>
+                focus fully on their core business.
+              </p>
+            </div>
+          </div>
+
+          <div class="row specialist px_50">
+            <div class="col-lg-6">
+              <h6 class="title">We are specialists in: 
+              </h6>
+              <p class="spec_para">» Overcoming difficult issues in logistically challenging situations.</p>
+              <p class="spec_para">» Delivering to the highest quality without any compromising safety.</p>
+              <p class="spec_para">» Working to suit customers’ needs, 24 hrs. per day, 7 days per week.</p>
+              <p class="spec_para">» Delivering within business critical, secure, live and occupied environments.</p>
+              <a class="more_bottom" href="#javascript:;">See more
+                <i class="fal fa-long-arrow-right"></i>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <div class="rft_img">
+                <img src="assets/images/property_services.jpg" alt="Property_Services">
+              </div>
+            </div>
+          
+          </div>
+
+
+        </div>
+
+      </section>
+    </div>
+    <div class="mainDivSec">
+      <section class="directions">
+        <div class="px_50">
+          <div class="dr_line same">
+            <img src="assets/images/Line-4.png" alt="">
+          </div>
+          <div class="row">
+            <div class="col-md-12 headingDiv">
+              <h3 class="db__global bottom_center">
+                <!-- <span id="headingAnimition7" class="animatedHeading">  </span> -->
+                <span id="headingAnimition7" class="animatedHeading"> Get Direction </span>
+                <!-- Get Direction -->
+              </h3>
+            </div>
+          </div>
+          <!-- <div id="map"></div> -->
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.2114643819036!2d55.23205341448369!3d25.162336639289887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f698b38c54461%3A0xa470b7e8b7390153!2sCodes%20Construction%20LLC!5e0!3m2!1sen!2s!4v1644745780805!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    </div>
+
+    <div class="mainDivSec sliderParal">
+      <section class="project_slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 headingDiv">
+              <h3 class="db__global bottom_center flexCol">
+                <span id="headingAnimition8" class="animatedHeading"> Our Projects</span>
+                <!-- Our Latest Project Photos
+              <span>from all over the UAE</span> -->
+              </h3>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="all_slides" id="slidesWithScroll">
+          <a class="item__div" href="portfolio.html">
+            <img src="assets/images/project10a.jpg" alt="">
+          
+
+          </a>
+          <a class="item__div" href="portfolio.html" >
+            <img src="assets/images/project17a.jpg" alt="">
+            
+
+          </a>
+          <a class="item__div" href="portfolio.html" >
+            <img src="assets/images/project17b.jpg" alt="">
+           
+
+          </a>
+          <a class="item__div" href="portfolio.html">
+            <img src="assets/images/project16a.jpg" alt="">
+          
+          </a>
+          <a class="item__div" href="portfolio.html">
+            <img src="assets/images/project10a.jpg" alt="">
+           
+
+          </a>
+          <a class="item__div" href="portfolio.html">
+            <img src="assets/images/project16a.jpg" alt="">
+            
+
+          </a>
+          <a class="item__div" href="portfolio.html">
+            <img src="assets/images/project17c.jpg" alt="">
+           
+          </a>
+          <a class="item__div" href="portfolio.html">
+            <img src="assets/images/project7b.jpg" alt="">
+          
+
+          </a>
+          <a class="item__div" href="portfolio.html">
+            <img src="assets/images/project17a.jpg" alt="">
+          
+
+          </a>
+
+        </div>
+      </section>
+    </div>
+    <div class="mainDivSec">
+      <section class="requsetMainDiv">
+        <div class="request" id="requesrtDiv">
+          <div class="">
+            <a class="sidebar__closeBtn spin circleButton onceSpin sliderButton" href="portfolio.html" >
+              <span>
+                <label class="sidebar__close">
+                  <i class="fal fa-times"></i>
+                </label>
+              </span>
+            </a>
+            <h3 class="db__global head_area bottom_center">Request <small class="clr">A</small> <br> Callback</h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <form action="">
+                  <div class="frm">
+                    <div class="form-floating mb-3 messages">
+                      <input type="name" class="form-control" id="floatingInput" name="name" placeholder="Your Name">
+                      <label for="floatingInput" class="label">Your Name</label>
+                    </div>
+                    <div class="form-floating call">
+                      <input type="phone" class="form-control" id="floatingPassword" name="phone" placeholder="Phone">
+                      <label for="floatingPassword" class="label">Phone</label>
+                    </div>
+                    <div class="ch_box">
+                      <input type="radio" class="inpts">
+                      <span class="is_active">
+                        <i class="fad fa-check"></i>
+                      </span>
+                      <p>I accepts the terms for processing personal data</p>
+                    </div>
+                  </div>
+
+                  <div class="mores">
+
+                    <button class="btn">
+                      <div class="moreHover">
+
+                      </div> <i class="fal fa-long-arrow-right"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+
+      <div class="site_footer">
+
+        <div class="numbers">
+
+          <span>  
+               <img src="assets/images/ftr.png">
+            + 971 4 5463 566</span>
+        </div>
+        <div class="px_50">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 col-12 pb-4">
+              <div class="logo">
+                <img src="assets/images/Footer_Logo.png" alt="">
+
+              </div>
+              <p class="para">I believe that good business, well done, is a force for good in society. The Codes
+                Construction Corporate Governance Principles are a tool that helps us look
+                ourselves in the mirror, to see where we’ve done well, and where we can raise
+                our corporate governance standards.</p>
+
+                <div class="mngr">
+                  <h6 class="title">
+                    Khalid Saif,
+                    <small>General Manager, Codes Construction</small>
+                  </h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 pb-4">
+              <h3 class="footer_head">Useful links</h3>
+              <ul class="links">
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">
+                    About us
+                  </a>
+                </li>
+                <li>
+                  <a href="">Sustainability</a>
+                </li>
+                <li>
+                  <a href="">
+                    Portfolio
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <h3 class="footer_head">Privacy</h3>
+              <ul class="policies links">
+                <li>
+                  <a href="">Careers</a>
+                </li>
+                <li>
+                  <a href=""> Our Values
+                  </a>
+                </li>
+                <li>
+                  <a href="">Contact Us</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <h3 class="footer_head"> Contact Info
+              </h3>
+              <ul class="contact_links links">
+                <li><a rel="noreferrer noopener nofollow" target="_blank" aria-label="Twitter Social" class="twitter"
+                    href="#javascript"><i class="fal fa-envelope"></i>
+                    <p> info@codescs.ae</p>
+                  </a></li>
+                <li><a rel="noreferrer noopener nofollow" target="_blank" aria-label="Facebook Social" class="facebook"
+                    href="#javascript;">
+                    <i class="fal fa-phone-alt"></i>
+                    <p>+971 4 5463 566</p>
+                  </a>
+                </li>
+                <li><a rel="noreferrer noopener nofollow" target="_blank" aria-label="Twitter Social" class="twitter"
+                    href="#javascript"><i class="fal fa-map-marker-alt"></i>
+                    <p>Al Makateb Building, Level 1 
+                      <br> Al Quoz 3, Sheikh Zayed Road 
+                      <br> P.O. Box 888185 <br>Dubai, United Arab Emirates.
+
+                    </p>
+                  </a></li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="other_footer">
+            <div class="inner__footer">
+              <div class="types">
+                <img src="assets/images/iso_logo.jpg" alt="">
+              </div>
+              <div class="types">
+                <p class="copy__rights">Copyright &copy; Codes Construction LLC <span>|</span> All rights reserved. </p>
+              </div>
+              <div class="types">
+                <div class="folw">
+                  <ul class="scio_links">
+                    <li><a href="#javascript:;">
+                        <i class="fab fa-facebook-f"></i>
+                      </a></li>
+                    <li><a href="#javascript:;"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#javascript:;"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/flexslider/flexslider-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <!-- <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"
+    integrity="sha512-fNprFnoeUomE0+m0nYtgoIrlUm81yW4dtuBVhMluVYlbpYEGMfEbUJJN4muTYiltfmDyWkQ5TpmwmIhdFK7qEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- ssss -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.js"
+    integrity="sha512-vfE8OCUETP038fi2pHsLeJC/5xd48FyLsATJLulbdsCRBXgRWxA+0K9he4GClcPjT24vMJk1mFMFbjYS9J7NpA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- ssss -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=32"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js"
+    integrity="J6YEe5hjKuk/TENUR7jEMr6VNR4lwN8iVpSGj1g8MU4="></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/drawer (1).js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgd5IzCFy27NIuEimbQRrLH2ouRb9xMOg &callback=initMap"
+    async defer></script>
+  <script type="text/javascript" src="assets/js/moment.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script>
+    $(function () {
+      $('input[name="datetimes"]').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+          format: 'M/DD hh:mm A'
+        }
+      });
+    });
+  </script>
+
+  <script>
+
+
+    $('.all_projects').flexslider({
+      animation: "slide",
+      animationLoop: false,
+      itemWidth: 495,
+      itemMargin: 25,
+      mousewheel: false,
+      controlNav: false
+    });
+  </script>
+
+  <script>
+    function initMap() {
+      // Styles a map in night mode.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        // center: { lat: 25.162971, lng: 55.234388 },
+        center: { lat: 25.162516287878503, lng: 55.234327927579734 },
+        zoom: 12,
+        styles: [
+          {
+            "featureType": "all",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "saturation": 36
+              },
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 40
+              }
+            ]
+          },
+          {
+            "featureType": "all",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 16
+              }
+            ]
+          },
+          {
+            "featureType": "all",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 20
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 17
+              },
+              {
+                "weight": 1.2
+              }
+            ]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 20
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 21
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 17
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 29
+              },
+              {
+                "weight": 0.2
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 18
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 16
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 19
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#000000"
+              },
+              {
+                "lightness": 17
+              }
+            ]
+          }
+        ]
+
+      });
+      
+    }
+
+
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "horizontal",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: false,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    var helpers = {
+      addZeros: function (n) {
+        return (n < 10) ? '0' + n : '' + n;
+      }
+    };
+
+    function sliderInit() {
+      var $slider = $('.slider-holder');
+      $slider.each(function () {
+        var $sliderParent = $(this).parent();
+        $(this).slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: true,
+          // fade: true,
+          speed: 1000,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                adaptiveHeight: true
+              }
+            }
+          ]
+        });
+
+        if ($(this).find('.item').length > 1) {
+          $(this).siblings('.slides-numbers').show();
+        }
+
+        $(this).on('afterChange', function (event, slick, currentSlide) {
+          $sliderParent.find('.slides-numbers .active').html(helpers.addZeros(currentSlide + 1));
+        });
+
+        var sliderItemsNum = $(this).find('.slick-slide').not('.slick-cloned').length;
+        $sliderParent.find('.slides-numbers .total').html(helpers.addZeros(sliderItemsNum));
+
+      });
+
+      //   $('.slick-next').on('click', function () {
+      //     console.log('test');
+      //     $('.slider-holder').slick('slickGoTo', 5);
+      // });
+    };
+
+    sliderInit();
+
+  </script>
+  </div>
+</body>
+
+<script>
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  })
+</script>
+<script>
+  $(function () {
+    $('input[name="datetimes"]').daterangepicker({
+      timePicker: true,
+      startDate: moment().startOf('hour'),
+      endDate: moment().startOf('hour').add(32, 'hour'),
+      locale: {
+        format: 'M/DD hh:mm A'
+      }
+    });
+  });
+</script>
+
+
+<script>
+  var mnui = document.querySelector(".menu span i")
+  $(".menu").click(function () {
+
+    $('.sidebar_menu1').toggle("menu_active");
+    //  $('.menu span i').addClass("act");
+    mnui.classList.toggle("act");
+
+  });
+</script>
+
+
+
+</html>

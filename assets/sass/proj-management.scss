@@ -1,0 +1,337 @@
+@import "theme/variables";
+@import url('../optima/styles.css');
+
+    html {
+        overflow: hidden !important;
+
+    }
+    .db__global.bottom_center::after{
+        width: 140px;
+    }
+
+ .abouts{
+     .abts_banner{
+         background: url('../../assets/images/project_management_bannerss.jpg');
+         background-size: cover;
+         height: 640px;
+         .db_main{
+            .paras1{
+                margin-bottom: 0;
+            }
+        }
+     }
+ }
+
+ .abtcodes_constructions {
+    padding: 40px 0;
+       .px_extra{
+           .benefits{
+               
+               .benefits_title{
+                padding-bottom: 20px;
+                   margin-bottom: 0;
+                  
+                }
+                .all_benefits{
+                    @extend display-flex;
+                    padding-top: 20px;
+                    padding-bottom: 30px;
+                    .ben_picbox{
+                        width: 350px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .ben_details{
+                     padding-left: 40px;                
+                        .bene_list{
+                            @extend list-type-ulli;
+                            padding-top: 20px;
+                            li{
+                                color: $base-color-dark;
+                                font-size: $fs-regular + 2px;
+                                margin-bottom: 8px;
+                            }
+                        }
+                    }
+                }
+              
+           }
+       }
+     .abts__areas{
+        padding: 25px 0;
+        .values_text{
+            padding-bottom: 15px;
+        }
+     }
+ }
+
+
+
+
+
+
+footer .site_footer{
+    z-index: -99;
+}
+
+
+// // position: absolute;
+// // border: 1px solid #e7e7e7;
+// // -webkit-transform: rotate(
+// // -90deg
+// // );
+// // transform: rotate(
+// // -90deg
+// // );
+// // z-index: 6;
+// // top: 24px;
+// // right: -16px;
+// // background: #fff;
+// // width: 40px;
+// // height: 20px;
+// // border-top-left-radius: 20px;
+// // border-top-right-radius: 20px;
+// // border-bottom: 0;
+// // -webkit-box-sizing: border-box;
+// // box-sizing: border-box;
+// // }
+
+
+
+
+
+
+
+
+// .button {
+//   width: max-content;
+//   margin: 0 auto;
+//   height: 50px;
+//   position: relative;
+//   overflow: hidden;
+//   text-align: center;
+//   display: block;
+//   line-height:1.1;
+// }
+
+// svg {
+
+//   border-radius:25px;
+//   z-index:1;
+// }
+
+// path {
+//   stroke-width: 3;
+//   fill: none;
+//   stroke-dasharray: 460;
+//   -webkit-transition: -webkit-transform 1s linear;
+//   -moz-transition: -moz-transform 1s linear;
+//   transition: transform 1s linear;
+// }
+
+// .button:hover {
+//   cursor: pointer;
+// }
+// .button{
+//     .req{
+//         position: absolute;
+//         cursor:pointer;
+//     left: 0;
+//     right: 0;
+//     /* display: flex; */
+//     /* justify-content: center; */
+//     /* align-items: center; */
+//     top: 19px;
+//     text-transform: uppercase;
+//     font-family: 'optimanormal';
+//     font-size: 16px;
+
+//     }
+// }
+
+// .button:hover svg path, .maps:hover svg path {
+//     animation: dash 2s reverse cubic-bezier(0.95, 0.03, 0.51, 1.95);
+//     -webkit-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95);
+//     -moz-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95);
+//     -webkit-animation-fill-mode: forwards;
+//     animation-fill-mode: forwards;
+//     stroke: white;
+//     cursor: pointer;
+
+// }
+
+// @-webkit-keyframes dash{
+//     to {
+//       fill: transparent;
+//       stroke: #ffffff;
+//       stroke-linecap: round;
+//       stroke-linejoin: round;
+//       stroke-dashoffset: 600;
+//       stroke-dasharray: 600 0;
+//       }
+//   }
+// @keyframes dash{
+//     to {
+//       fill: transparent;
+//       stroke: #ffffff;
+//       stroke-linecap: round;
+//       stroke-linejoin: round;
+//       stroke-dashoffset: 600;
+//       stroke-dasharray: 600 0;
+//       }
+//   }
+// @-moz-keyframes dash{
+//     to {
+//       fill: transparent;
+//       stroke: #ffffff;
+//       stroke-linecap: round;
+//       stroke-linejoin: round;
+//       stroke-dashoffset: 600;
+//       stroke-dasharray: 600 0;
+//       }
+//   }
+//   .routes{
+//       padding-top: 8em;
+    
+//       .area{
+//           padding-top: 6em;
+//           .daily{
+//             padding-top: 6em;
+//             padding-bottom: 6em;
+
+//               span{
+//                 &:last-child{
+//                     display: block;
+//                     color: $white-color;
+//                     font-size: 18px;
+//                     @include text-transform(uppercase)
+//                 }
+//               }
+//           }
+//           .email{
+//               color: $white-color;
+//               font-size: 20px;
+//               @include text-transform(uppercase);
+//           }
+//           .downloads{
+//               position: initial;
+//               padding: 0;
+//               padding-top: 4em;
+//           }
+//           .downloads .db_pdf_link span i{
+//               width: 45px;
+//               height: 45px;
+//               font-size: 24px;
+//           }
+//           .downloads .db_pdf_link a{
+//               text-transform: uppercase;
+//               font-size: 18px;
+
+//           }
+//           .downloads .db_pdf_link span{
+//             text-transform: uppercase;
+//             font-size: 18px;
+//             color: $secondary-color;
+//         }
+//         .downs{
+//             padding-left: 10px;
+//             line-height: 1.4;
+        
+//         }
+//       }
+//     .maps{
+//         position: relative;
+//         .rt{
+//             position: absolute;
+//             text-align: center;
+//             left: 0;
+//             right: 0;
+//             text-transform: uppercase;
+//             margin: 0 auto;      
+//             cursor: pointer;
+//             font-size: 16px;
+//             top: -2px;
+//             color: white;
+
+//             &:hover{
+//                 color: white;
+//             }
+//         }
+//     }
+//     .rt_para{
+//         color: white;
+//         font-size: 18px;
+//         line-height: 1.7;
+//         font-size: 24px;
+
+//         span{
+//             display: block;
+//         }
+//     }
+//   }
+
+//   .dbs{
+//     color: $secondary-color;
+//     font-size: 20px;
+//     text-transform: uppercase;
+// }
+
+// @media (max-width:1400px) {
+//     .routes .rt_para {
+//         font-size: 20px;
+//     }
+//     .routes .area .daily span:last-child, .routes .area .email,.routes .area .downloads .db_pdf_link span, .routes .area .downloads .db_pdf_link a
+//         {
+//         font-size: 16px;
+
+//             }
+//             .routes .area .downloads .db_pdf_link span i {
+//                 width: 38px;
+//                 height: 38px;
+//                 font-size: 20px;
+//             }
+//         .dbs {
+//             font-size: 16px;
+
+//         } 
+//         .contact_us .cont_dtl .head span:last-child {
+//             font-size: 50px;
+//         }
+//         .contact_us .cont_dtl .head span:first-child {
+//             font-size: 40px;
+//         }
+// }   
+
+// @media (max-width:576px) {
+//     .routes .rt_para {
+//         font-size: 14px;
+//     }
+//     .routes .area .daily span:last-child, .routes .area .email,.routes .area .downloads .db_pdf_link span, .routes .area .downloads .db_pdf_link a
+//         {
+//         font-size: 14px;
+
+//             }
+//             .routes .area .downloads .db_pdf_link span i {
+//                 width: 30px;
+//                 height: 30px;
+//                 font-size: 18px;
+//             }
+//         .dbs {
+//             font-size: 14px;
+
+//         } 
+//         .contact_us .cont_dtl .head span:last-child {
+//             font-size: 30px;
+//         }
+//         .contact_us .cont_dtl .head span:first-child {
+//             font-size: 14px;
+//         }
+// }   
+
+// @include tablet {
+//     .reuest2 .head_area {
+//         font-size: 45px !important;
+//     }
+// }

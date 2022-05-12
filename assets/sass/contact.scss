@@ -1,0 +1,330 @@
+@import "theme/variables";
+@import url('../optima/styles.css');
+
+    html {
+        overflow: hidden !important;
+
+    }
+.contact_us {
+    background: #11151b;
+    padding-bottom: 4em;
+
+    .cont_dtl{
+        text-align: center;
+        padding: 3em 0;
+        img{
+            width: 35px;
+        }
+        span{
+            &:last-child{
+                color: $white-color;
+            }
+        }
+        .head{
+            line-height: 1.2;
+            padding: 3em 0;
+
+          span{
+              &:first-child{
+                  color: $secondary-color;
+                  font-size: 55px;
+                }
+              &:last-child{
+                color: $white-color;
+                font-size: 70px;
+                font-family: 'optimabold';
+                display: block;
+            }
+          }
+        }
+        .btn{
+            // border: 1px solid $secondary-color;
+            font-size: 22px;
+            @include text-transform(uppercase);
+            color: $white-color;
+            border-radius: 50px;
+            &::before{
+                position: absolute;
+                content: '';
+                border-top-color: goldenrod;
+                border-right-color: goldenrod;
+                border-bottom-color: goldenrod;
+                transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s !important;
+            }
+
+            }
+    }
+    .mps {
+        width: 90%;
+        margin-left: auto;
+    
+        .map{
+            width: 100%;
+            background-size: cover;
+    
+        }
+    }
+}
+footer .site_footer{
+    z-index: -99;
+}
+
+
+// position: absolute;
+// border: 1px solid #e7e7e7;
+// -webkit-transform: rotate(
+// -90deg
+// );
+// transform: rotate(
+// -90deg
+// );
+// z-index: 6;
+// top: 24px;
+// right: -16px;
+// background: #fff;
+// width: 40px;
+// height: 20px;
+// border-top-left-radius: 20px;
+// border-top-right-radius: 20px;
+// border-bottom: 0;
+// -webkit-box-sizing: border-box;
+// box-sizing: border-box;
+// }
+
+
+
+
+
+
+
+
+.button {
+  width: max-content;
+  margin: 0 auto;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  line-height:1.1;
+}
+
+svg {
+
+  border-radius:25px;
+  z-index:1;
+}
+
+path {
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 460;
+  -webkit-transition: -webkit-transform 1s linear;
+  -moz-transition: -moz-transform 1s linear;
+  transition: transform 1s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.button{
+    .req{
+        position: absolute;
+        cursor:pointer;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    top: 19px;
+    text-transform: uppercase;
+    font-family: 'optimanormal';
+    font-size: 16px;
+
+    }
+}
+
+.button:hover svg path, .maps:hover svg path {
+    animation: dash 2s reverse cubic-bezier(0.95, 0.03, 0.51, 1.95);
+    -webkit-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95);
+    -moz-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    stroke: white;
+    cursor: pointer;
+
+}
+
+@-webkit-keyframes dash{
+    to {
+      fill: transparent;
+      stroke: #ffffff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dashoffset: 600;
+      stroke-dasharray: 600 0;
+      }
+  }
+@keyframes dash{
+    to {
+      fill: transparent;
+      stroke: #ffffff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dashoffset: 600;
+      stroke-dasharray: 600 0;
+      }
+  }
+@-moz-keyframes dash{
+    to {
+      fill: transparent;
+      stroke: #ffffff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dashoffset: 600;
+      stroke-dasharray: 600 0;
+      }
+  }
+  .routes{
+      padding-top: 8em;
+    
+      .area{
+          padding-top: 6em;
+          .daily{
+            padding-top: 6em;
+            padding-bottom: 6em;
+
+              span{
+                &:last-child{
+                    display: block;
+                    color: $white-color;
+                    font-size: 18px;
+                    @include text-transform(uppercase)
+                }
+              }
+          }
+          .email{
+              color: $white-color;
+              font-size: 20px;
+              @include text-transform(uppercase);
+          }
+          .downloads{
+              position: initial;
+              padding: 0;
+              padding-top: 4em;
+          }
+          .downloads .db_pdf_link span i{
+              width: 45px;
+              height: 45px;
+              font-size: 24px;
+          }
+          .downloads .db_pdf_link a{
+              text-transform: uppercase;
+              font-size: 18px;
+
+          }
+          .downloads .db_pdf_link span{
+            text-transform: uppercase;
+            font-size: 18px;
+            color: $secondary-color;
+        }
+        .downs{
+            padding-left: 10px;
+            line-height: 1.4;
+        
+        }
+      }
+    .maps{
+        position: relative;
+        .rt{
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            text-transform: uppercase;
+            margin: 0 auto;      
+            cursor: pointer;
+            font-size: 16px;
+            top: -2px;
+            color: white;
+
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .rt_para{
+        color: white;
+        font-size: 18px;
+        line-height: 1.7;
+        font-size: 24px;
+
+        span{
+            display: block;
+        }
+    }
+  }
+
+  .dbs{
+    color: $secondary-color;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width:1400px) {
+    .routes .rt_para {
+        font-size: 20px;
+    }
+    .routes .area .daily span:last-child, .routes .area .email,.routes .area .downloads .db_pdf_link span, .routes .area .downloads .db_pdf_link a
+        {
+        font-size: 16px;
+
+            }
+            .routes .area .downloads .db_pdf_link span i {
+                width: 38px;
+                height: 38px;
+                font-size: 20px;
+            }
+        .dbs {
+            font-size: 16px;
+
+        } 
+        .contact_us .cont_dtl .head span:last-child {
+            font-size: 50px;
+        }
+        .contact_us .cont_dtl .head span:first-child {
+            font-size: 40px;
+        }
+}   
+
+@media (max-width:576px) {
+    .routes .rt_para {
+        font-size: 14px;
+    }
+    .routes .area .daily span:last-child, .routes .area .email,.routes .area .downloads .db_pdf_link span, .routes .area .downloads .db_pdf_link a
+        {
+        font-size: 14px;
+
+            }
+            .routes .area .downloads .db_pdf_link span i {
+                width: 30px;
+                height: 30px;
+                font-size: 18px;
+            }
+        .dbs {
+            font-size: 14px;
+
+        } 
+        .contact_us .cont_dtl .head span:last-child {
+            font-size: 30px;
+        }
+        .contact_us .cont_dtl .head span:first-child {
+            font-size: 14px;
+        }
+}   
+
+@include tablet {
+    .reuest2 .head_area {
+        font-size: 45px !important;
+    }
+}

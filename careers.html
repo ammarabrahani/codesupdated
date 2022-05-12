@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" class="has-hover js js-focus-visible is-not-ie-edge will-have-scroll-smooth has-scroll-init has-scroll-smooth"  data-js-focus-visible="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codes Construction </title>
+
+  <link rel="stylesheet" href="assets/cssn/bootstrap.css">
+  <link rel="stylesheet" href="assets/cssn/main.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/New folder/drawer.css">
+  <link rel="stylesheet" href="assets/css/aminamtes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/cssn/career.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+
+</head>
+
+<body id="scroll-container">
+  <!-- <div  class="viewport" id="viewport"> -->
+    <input type="checkbox" id="menu-control" class="menu-control" onchange="sidebar('menu-control')">
+    <aside class="sidebar side1" id="side1">
+      <div class="overlaySidebar" id="overlaySidebar">
+  
+      </div>
+      <div class="curveDiv" id="curveDiv">
+        <div class="area">
+          <div class="top_br">
+            <a class="home" href="index.html">HomePage</a>
+            <label for="menu-control" class="sidebar__close hidePc"> <i class="fal fa-times"></i>
+            </label>
+            <!-- <label for="menu-control" > -->
+            <div class="menu" id="menu">
+              <span>Menu
+                <i class="fal fa-chevron-right"></i>
+              </span>
+            </div>
+            <!-- </label> -->
+          </div>
+          <nav class="navbar sidebar__menu" id="toggle">
+            <div class="container-fluid">
+  
+              <ul class="navbar-nav ms-auto sidebar_menu1">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">Sustainability</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="project.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link active" href="careers.html"></a> -->
+                  <a class="nav-link active" aria-current="page" href="careers.html"><label for="menu-control"
+                    class="sidebar__close linkClose">Careers</label></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              
+  
+              </ul>
+  
+            </div>
+          </nav>
+  
+          <div class="downloads">
+            <div class="db_pdf_link">
+              <div>
+                <a href="">Download the Company Profile</a>
+                <span class="mb"> PDF.8 MB</span>
+              </div>
+              <div>
+                <span><i class="fal fa-arrow-to-bottom"></i></span>
+              </div>
+              <div>
+  
+              </div>
+            </div>
+  
+            <div class="pg_links">
+              <ul>
+                <li>Team</li>
+                <li>News & Offers</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar__closeBtn spin circleButton" id="sidebar__close">
+          <span>
+            <label for="menu-control" class="sidebar__close">
+              <i class="fal fa-times"></i>
+            </label>
+          </span>
+        </div>
+  
+      </div>
+  
+  
+    </aside>
+    <div  class="scroller">
+      <div class="loader" id="loader">
+      <img src="assets/images/Animation.svg" alt="">
+          <!-- <div class="loaderLogo">
+          <div class="leftBar">
+            <div class="innerBar">
+
+            </div>
+          </div>
+          <div class="centerBar">
+            <div class="innerBar">
+
+            </div>
+          </div>
+          <div class="rightBar">
+            <div class="innerBar">
+
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <header>
+     
+        <div class="">
+          <nav class="navbar navbar-expand-lg navbar-light pse" id="navbar">
+            <div class="container-fluid">
+              <a class="brands" href="#">
+                <img src="assets/images/Logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About Us
+                          <i class="fal fa-chevron-down"></i>                    
+  
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <div class="sub__links">
+                          
+                            <div class="details">
+                              <a class="" href="about-us.html">About Us
+                                <i class="fal fa-chevron-right"></i>                    
+                              </a>
+                            <ul class="inner___pages_links">
+                              <!-- <li><a class="dropdown-item" href="#"></a></li> -->
+                              <li><a class="dropdown-item" href="construction-operations.html">Construction Operations 
+                              </a></li>
+                              <li><a class="dropdown-item" href="project-management.html  ">Projects Management 
+                              </a></li>
+                              <li><a class="dropdown-item" href="#">MEP Works
+                              </a></li>
+                           
+                           
+                            </ul>
+                            <ul class="inner___pages_links">
+                              <li><a class="dropdown-item" href="#">Pre-Engineering Capabilities 
+                              </a></li>
+                              <li><a class="dropdown-item" href="#">BIM Design Capabilities 
+                              </a></li>
+                              <li><a class="dropdown-item" href="mep-modular.html">MEP Modular Systems
+                              </a></li>
+                            </ul>
+                            <ul class="inner___pages_links">
+                              <li><a class="dropdown-item" href="#">Property Services 
+                              </a></li>
+                              <li><a class="dropdown-item" href="#">Building Maintenance 
+                              </a></li>
+                              <li><a class="dropdown-item" href="#">Fit-Out & Refurbishment
+                              </a></li>
+                            </ul>
+                            </div>
+                          </div>
+                          
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sustainability.html">Sustainability</a>
+                  </li>
+         
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="project.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="careers.html">Careers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+  
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    
+      <div class="toggle_btn">
+        <div class="banner drawerSide">
+          <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon icon1"></i>
+            <i class="hamburger__icon icon2"></i>
+            <i class="hamburger__icon icon3"></i>
+          </label>
+        
+
+
+        </div>
+        <div>
+        </div>
+      </div>
+      <div class="banner">
+
+      </div>
+      <div class="mainDivSec working">
+          <div class="container">
+            <div class="down__head">
+                <h3 class="db__global bottom_center">
+                  Working Together, Connecting & <br> Creating Safer Working Environments
+                </h3>
+                <p class="down_para">We are focused on setting the standards for others to follow, and paramount to this are our teams of innovative, multiskilled, experienced and ambitious individuals. We value each member of the team and at CEG you are not just a number. Be a part of us. Be successful. Be CEG.</p>              </div>
+                <div class="row work__dtl">
+                  <div class="col-lg-4">
+                  <div class="all_work">
+                      <span class="work__head">Reward + Recogination</span>
+                      <p>It’s not just CEG as a company that is recognised for its achievements, individuals are too. Hard work doesn’t go unnoticed at CEG, we recognise and reward such individuals as well as providing opportunities for all with work benefits such training, education and more.</p>
+                  </div>
+                  <div class="all_work">
+                      <span class="work__head">Innovation</span>
+                      <p>Whether it’s for our teams or our clients we pioneer and see value in innovation that makes work systems easier, safer and more efficient.
+
+
+                       
+                      </p>
+                       
+  
+                          
+                  </div>
+                  </div>
+                  <div class="col-lg-4">
+                  <div class="all_work">
+                      <span class="work__head">Skills + Training</span>
+  
+                      <p>We believe in investing in the future and part of this is giving all the opportunity to train and learn, strengthening skills and experience in order to make our teams better. Currently we run graduate schemes, work placements and apprenticeships. Keep an eye on this Careers page or our LinkedIn page for more information and updates. When you succeed, we succeed.</p>
+  
+                  </div>
+                  <div class="all_work">
+  
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem pariatur est voluptate, distinctio dignissimos, saepe, voluptates dolorum repellendus!
+  
+                   
+  
+  
+                      </p>
+  
+                  </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="all_work">
+                          <span class="work__head">Diversity + Women in Construction</span>
+                          <p>We want to shout out that CEG, and the construction industry, is a great place to work for all individuals regardless of colour, race, religion, gender, age, nationality, sexual orientation, marital status or disability, whatever career path you decide to follow. Our teams work to uphold diversity and inclusion, and support equal opportunities. Roles are so varied across the CEG sectors as well as the actual projects themselves.</p>
+      
+                      </div>
+                      <div class="all_work">
+                          <p> CEG have proudly been given the opportunity to work on some prestigious projects which many of our female members have played a strong part in delivering. We strive for continuing improvements in supporting women getting into construction and those seeking more senior roles. We are proud to showcase all individuals and teams at CEG. We are an equal opportunities employer.</p>
+  
+                      </div>
+                  </div>
+              </div>
+            
+            <div class="all__vac">
+                <div class="__note">
+                    <h2 class="career__head">All Vacancies
+                        <span class="note">Note To Recuritment Agencies:</span>
+
+                    </h2>
+                   <div>
+                       <p>>&nbsp;CE have a PSL for both labour supply and permanent recruitment!</p>
+                       <p>>&nbsp;Please do not send speculative CV’s into the business as these will be deleted without being read!</p>
+
+                   </div> 
+                </div>
+                <div class="estimators">
+                    <ul class="lists">
+                        <li>
+                          <div class="dbx">
+                              <span>Senior Mechanical Estimators</span>
+                              <span>Dubai United Arab Emirates.</span>
+                              <span>08/Dec/12</span>
+
+                          </div>  
+                          <div class="dbx_rht">
+                            <i class="fal fa-share-alt">
+                                <a href="#javascript:;">Share</a>
+                            </i>
+                                <button class="btn">Apply Prospectively</button>
+                         </div>  
+                         
+                        </li>
+                        <li>
+                            <div class="dbx">
+                                <span>M&E Project Managers</span>
+                                <span>Dubai United Arab Emirates.</span>
+                                <span>08/Dec/12</span>
+  
+                            </div>  
+                            <div class="dbx_rht">
+                              <i class="fal fa-share-alt">
+                                  <a href="#javascript:;">Share</a>
+                              </i>
+                                  <button class="btn">Apply Prospectively</button>
+                           </div>  
+                           
+                          </li>
+                          <li>
+                            <div class="dbx">
+                                <span>M&E Quantity Surveyors
+                                </span>
+                                <span>Dubai United Arab Emirates.</span>
+                                <span>08/Dec/12</span>
+  
+                            </div>  
+                            <div class="dbx_rht">
+                              <i class="fal fa-share-alt">
+                                  <a href="#javascript:;">Share</a>
+                              </i>
+                                  <button class="btn">Apply Prospectively</button>
+                           </div>  
+                           
+                          </li>
+                    </ul>
+                    <div class="__note">
+                        <h2 class="career__head">Apprenticeships
+    
+                        </h2>
+                        <p>We are extremely proud of our apprenticeship programme which covers both site and office-based roles, and is run in conjunction with accredited colleges/universities.
+
+                          .</p>
+                        <ul class="lists">
+                            <li>
+                              <div class="dbx">
+                                  <span>Electrical Apprentice</span>
+                                  <span>Dubai United Arab Emirates.</span>
+                                  <span>08/Dec/12</span>
+    
+                              </div>  
+                              <div class="dbx_rht">
+                              
+                                    <button class="btn">Closed</button>
+                             </div>  
+                             
+                            </li>
+                            <li>
+                                <div class="dbx">
+                                    <span>Mechanical Apprentice
+                                    </span>
+                                    <span>Dubai United Arab Emirates.</span>
+                                    <span>08/Dec/12</span>
+      
+                                </div>  
+                                <div class="dbx_rht">
+                               
+                                      <button class="btn">Closed</button>
+                               </div>  
+                               
+                              </li>
+                              <li>
+                                <div class="dbx">
+                                    <span>Quantity Surveying
+
+                                    </span>
+                                    <span>Dubai United Arab Emirates.</span>
+                                    <span>08/Dec/12</span>
+      
+                                </div>  
+                                <div class="dbx_rht">
+                               
+                                      <button class="btn">Closed</button>
+                               </div>  
+                               
+                              </li>
+                              <li>
+                                <div class="dbx">
+                                    <span>Office Administration
+
+                                    </span>
+                                    <span>Dubai United Arab Emirates.</span>
+                                    <span>08/Dec/12</span>
+      
+                                </div>  
+                                <div class="dbx_rht">
+                               
+                                      <button class="btn">Closed</button>
+                               </div>  
+                               
+                              </li>
+                              <li>
+                                <div class="dbx">
+                                    <span>Plumbing
+                                    </span>
+                                    <span>Dubai United Arab Emirates.</span>
+                                    <span>08/Dec/12</span>
+      
+                                </div>  
+                                <div class="dbx_rht">
+                               
+                                      <button class="btn">Closed</button>
+                               </div>  
+                               
+                              </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            </div>
+      </div>
+   
+  
+      <div class="mainDivSec">
+        <section class=" request">
+          <div class="container">
+            <h3 class="db__global head_area bottom_center">Request <small class="clr">A</small> <br> Callback</h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <form action="">
+                  <div class="frm">
+                    <div class="form-floating mb-3 messages">
+                      <input type="name" class="form-control" id="floatingInput" name="name" placeholder="Your Name">
+                      <label for="floatingInput" class="label">Your Name</label>
+                    </div>
+                    <div class="form-floating call">
+                      <input type="phone" class="form-control" id="floatingPassword" name="phone" placeholder="Phone">
+                      <label for="floatingPassword" class="label">Phone</label>
+                    </div>
+                    <div class="ch_box">
+                      <input type="radio" class="inpts">
+                      <span class="is_active">
+                        <i class="fad fa-check"></i>
+                      </span>
+                      <p>I accepts the terms for processing personal data</p>
+                    </div>
+                  </div>
+  
+                  <div class="mores">
+  
+                    <button class="btn">
+                      <div class="moreHover">
+  
+                      </div> <i class="fal fa-long-arrow-right"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+  
+          </div>
+        </section>
+      </div>
+  
+    
+      <footer>
+
+        <div class="site_footer">
+  
+          <div class="numbers">
+  
+            <span>  
+                 <img src="assets/images/ftr.png">
+              + 971 4 5463 566</span>
+          </div>
+          <div class="px_50">
+            <div class="row">
+              <div class="col-lg-5 col-md-6 col-12 pb-4">
+                <div class="logo">
+                  <img src="assets/images/Footer_Logo.png" alt="">
+  
+                </div>
+                <p class="para">I believe that good business, well done, is a force for good in society. The Codes
+                  Construction Corporate Governance Principles are a tool that helps us look
+                  ourselves in the mirror, to see where we’ve done well, and where we can raise
+                  our corporate governance standards.</p>
+  
+                  <div class="mngr">
+                    <h6 class="title">
+                      Khalid Saif,
+                      <small>General Manager, Codes Construction</small>
+                    </h6>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6 pb-4">
+                <h3 class="footer_head">Useful links</h3>
+                <ul class="links">
+                  <li>
+                    <a href="">Home</a>
+                  </li>
+                  <li>
+                    <a href="">
+                      About us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">Sustainability</a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Portfolio
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <h3 class="footer_head">Privacy</h3>
+                <ul class="policies links">
+                  <li>
+                    <a href="">Careers</a>
+                  </li>
+                  <li>
+                    <a href=""> Our Values
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">Contact Us</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <h3 class="footer_head"> Contact Info
+                </h3>
+                <ul class="contact_links links">
+                  <li><a rel="noreferrer noopener nofollow" target="_blank" aria-label="Twitter Social" class="twitter"
+                      href="#javascript"><i class="fal fa-envelope"></i>
+                      <p> info@codescs.ae</p>
+                    </a></li>
+                  <li><a rel="noreferrer noopener nofollow" target="_blank" aria-label="Facebook Social" class="facebook"
+                      href="#javascript;">
+                      <i class="fal fa-phone-alt"></i>
+                      <p>+971 4 5463 566</p>
+                    </a>
+                  </li>
+                  <li><a rel="noreferrer noopener nofollow" target="_blank" aria-label="Twitter Social" class="twitter"
+                      href="#javascript"><i class="fal fa-map-marker-alt"></i>
+                      <p>Al Makateb Building, Level 1 
+                        <br> Al Quoz 3, Sheikh Zayed Road 
+                        <br> P.O. Box 888185 <br>Dubai, United Arab Emirates.
+  
+                      </p>
+                    </a></li>
+                </ul>
+  
+              </div>
+            </div>
+            <div class="other_footer">
+              <div class="inner__footer">
+                <div class="types">
+                  <img src="assets/images/iso_logo.jpg" alt="">
+                </div>
+                <div class="types">
+                  <p class="copy__rights">Copyright &copy; Codes Construction LLC <span>|</span> All rights reserved. </p>
+                </div>
+                <div class="types">
+                  <div class="folw">
+                    <ul class="scio_links">
+                      <li><a href="#javascript:;">
+                          <i class="fab fa-facebook-f"></i>
+                        </a></li>
+                      <li><a href="#javascript:;"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#javascript:;"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/flexslider/flexslider-min.js"></script>
+    <!-- <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"
+    integrity="sha512-fNprFnoeUomE0+m0nYtgoIrlUm81yW4dtuBVhMluVYlbpYEGMfEbUJJN4muTYiltfmDyWkQ5TpmwmIhdFK7qEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- ssss -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.js" integrity="sha512-vfE8OCUETP038fi2pHsLeJC/5xd48FyLsATJLulbdsCRBXgRWxA+0K9he4GClcPjT24vMJk1mFMFbjYS9J7NpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- ssss -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=32"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js"
+      integrity="J6YEe5hjKuk/TENUR7jEMr6VNR4lwN8iVpSGj1g8MU4="></script>
+    <script src="assets/js/drawer (1).js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgd5IzCFy27NIuEimbQRrLH2ouRb9xMOg &callback=initMap"
+      async defer></script>
+
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+      $(function() {
+        $('input[name="datetimes"]').daterangepicker({
+          timePicker: true,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(32, 'hour'),
+          locale: {
+            format: 'M/DD hh:mm A'
+          }
+        });
+      });
+      </script>
+
+    <script>
+      $('.all_projects').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 495,
+        itemMargin: 25,
+        mousewheel: false,
+        controlNav: false
+      });
+    </script>
+
+<script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+  
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  
+    })
+  </script>
+
+</body>
+
+
+
+
+<!-- <script>
+
+    var home = document.querySelector(".home");
+    var overlaySidebar = document.querySelector(".overlaySidebar");
+
+    console.log(home);
+    let curveDiv = document.querySelector(".curveDiv");
+    home.addEventListener("click", () => {
+      curveDiv.style.display = "none";
+      overlaySidebar.style.display = "none";
+
+    })
+
+
+  </script> -->
+
+
+
+<script>
+  var myCarousel = document.querySelector('#carouselExampleIndicators')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval : false
+})
+</script>
+<script>
+  var mnui = document.querySelector(".menu span i")
+  $(".menu").click(function () {
+
+    $('.sidebar_menu1').toggle("menu_active");
+    //  $('.menu span i').addClass("act");
+    mnui.classList.toggle("act");
+
+  });
+</script>
+
+
+
+</html>
